@@ -16,11 +16,20 @@ body {
   font-size: 16px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* NAV */
 .logo {
   color: var(--tertiary);
   font-weight: 900;
   font-size: 3em;
+}
+
+.logo a {
+  text-decoration: none;
+  color: var(--tertiary);
 }
 .navbar {
   overflow: hidden;
@@ -49,9 +58,8 @@ body {
   position: relative;
 }
 
-.menu a:hover {
-  content: "";
-  bottom: 0;
+.menu .active {
+  border-bottom: #fff solid 3px;
 }
 
 .menu a::after {
@@ -65,7 +73,7 @@ body {
   bottom: -5px;
 }
 
-.navbar a:hover::after {
+.navbar a:hover:not(.active)::after {
   width: 100%;
   transition: width 0.3s;
 }
@@ -153,6 +161,10 @@ section {
   flex-direction: column;
 }
 
+.category-item h3 {
+  margin-bottom: unset;
+}
+
 .category-item img {
   width: 100%;
   height: 20em;
@@ -236,6 +248,34 @@ footer {
   .category-container {
     flex-wrap: wrap;
   }
+}
+
+/* SERVICES PAGE */
+#select-categories h2 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+section:nth-child(odd) {
+  background-color: var(--tertiary);
+  max-width: unset;
+}
+
+#meat h2,
+#vegan h2,
+#beverages h2 {
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+#meat p,
+#vegan p,
+#beverages p {
+  margin-bottom: 1em;
+}
+
+.desc {
+  text-align: center;
 }
 
 @media (max-width: 1024px) {
