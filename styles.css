@@ -82,7 +82,7 @@ html {
 header {
   color: #fff;
   width: 100%;
-  height: 100dvh;
+  /* height: 100dvh; */
   position: relative;
 }
 
@@ -312,4 +312,43 @@ section:nth-child(odd) {
   .about {
     margin-bottom: 1.5em;
   }
+}
+
+/* SUPPORT PAGE */
+.hero-banner {
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  width: 100%;
+  height: 600px;
+  background: url(./assets/support-banner.jpg) no-repeat top center;
+  /* z-index: -1; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.hero-banner h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.hero-banner input {
+  padding: 1em 1em 1em 4em;
+  border: none;
+  outline: none;
+  border-radius: 0.5em;
+  /* flex-wrap: wrap; */
+}
+
+.fa-magnifying-glass {
+  position: relative;
+  top: -50px;
+  left: -85px;
+  /* background-color: red; */
+  font-size: 1.5em;
 }
