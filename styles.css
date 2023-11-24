@@ -278,6 +278,28 @@ section:nth-child(odd) {
   text-align: center;
 }
 
+/* ABOUT */
+.about-banner {
+  width: 100%;
+  height: 100dvh;
+}
+
+.about-title {
+  /* text-align: center*/
+  font-size: 5em;
+  position: absolute;
+  top: 40%;
+  right: 10%;
+}
+
+.about-banner img {
+  height: calc(100dvh - 90px);
+  width: 100%;
+  /* height: 100%; */
+  object-fit: cover;
+  object-position: center;
+}
+
 @media (max-width: 1024px) {
   /* Footer */
   .container {
