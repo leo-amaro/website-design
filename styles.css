@@ -404,7 +404,7 @@ section:nth-child(odd) {
   border-top-left-radius: 50%;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #ededed;
+  background-color: #fff;
   padding-top: calc(100% * 1.18);
   transition: all 0.3s ease-out 0.1s;
 }
