@@ -1,0 +1,45 @@
+/* FOOTER */
+footer {
+  background-color: var(--secondary);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 3em 1em;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about-main {
+  color: #fff;
+}
+.about-main.logo {
+  color: var(--tertiary);
+}
+
+.social {
+  display: flex;
+  gap: 1em;
+}
+
+.container a {
+  color: #fff;
+  text-decoration: none;
+}
+.container a:hover {
+  color: var(--primary);
+}
+.container h4 {
+  font-size: 1.3em;
+  color: #fff;
+  margin: 0 0 0.5rem 0;
+}
+.container ul {
+  margin: 0;
+  padding: 0;
+}
+.container li {
+  list-style: none;
+  padding: 0.5em 0;
+}

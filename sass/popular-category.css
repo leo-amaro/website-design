@@ -1,0 +1,117 @@
+.popular-category {
+  padding-top: 0;
+}
+.popular-category .card {
+  border-radius: 2em;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.popular-category .parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 3em;
+  grid-row-gap: 3em;
+}
+.popular-category a {
+  text-decoration: none;
+  position: relative;
+}
+.popular-category a:hover .meat {
+  background-color: #682e23;
+}
+.popular-category a:hover .meat img {
+  transform: translateY(-1rem);
+  transition: all ease-in-out 0.3s;
+}
+.popular-category .meat {
+  grid-area: 1/1/2/2;
+  background-color: #8f3e2e;
+  height: 18em;
+}
+.popular-category .meat img {
+  width: 23em;
+  position: relative;
+  top: -20%;
+}
+.popular-category .meat h2 {
+  color: #fff;
+  position: relative;
+  top: -18%;
+}
+.popular-category .ice-cream {
+  grid-area: 1/2/3/3;
+  background-color: #7AAEF9;
+}
+.popular-category .ice-cream img {
+  width: 18em;
+  position: relative;
+  bottom: 58px;
+  left: -39px;
+}
+.popular-category .ice-cream h2 {
+  color: #fff;
+  position: relative;
+  top: -6%;
+  font-size: 5em;
+  right: -26%;
+}
+.popular-category .ice-cream h3 {
+  position: relative;
+  top: -9%;
+  right: -25%;
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+.popular-category .burger {
+  grid-area: 1/3/2/4;
+  background-color: #D08715;
+  height: 18em;
+}
+.popular-category .burger img {
+  width: 23em;
+  position: relative;
+  top: -18%;
+}
+.popular-category .burger h2 {
+  color: #fff;
+  position: relative;
+  top: -18%;
+}
+.popular-category .vegetables {
+  grid-area: 2/1/3/2;
+  background-color: #275924;
+}
+.popular-category .vegetables img {
+  width: 14em;
+  position: relative;
+  top: -18%;
+}
+.popular-category .vegetables h2 {
+  color: #fff;
+  position: relative;
+  top: -13%;
+}
+.popular-category .pizza {
+  grid-area: 2/3/3/4;
+  background-color: #FF7F84;
+}
+.popular-category .pizza img {
+  width: 21em;
+  position: relative;
+  top: -18%;
+}
+.popular-category .pizza h2 {
+  color: #fff;
+  position: relative;
+  top: -13%;
+}
+.popular-category p {
+  font-size: 2em;
+  margin-bottom: 3em;
+}

@@ -1,0 +1,508 @@
+/* NAV */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap");
+.logo {
+  color: var(--tertiary);
+  font-size: 1em;
+  width: 3em;
+  padding-left: 2em;
+}
+.logo img {
+  width: 100%;
+}
+.logo a {
+  text-decoration: none;
+  color: var(--tertiary);
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: var(--primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  height: 4em;
+  border-radius: 50px;
+  left: 0;
+  width: 90%;
+  z-index: 99;
+  margin: 0 auto;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  gap: 1em;
+}
+.menu ul li {
+  list-style: none;
+  padding: 1em;
+}
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+.menu .active {
+  border-bottom: #fff solid 3px;
+}
+.menu a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #fff;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -5px;
+}
+
+.navbar a:hover:not(.active)::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+.order-now-btn {
+  margin-right: 2em;
+  padding: 0.5em 1em;
+  background: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--primary);
+}
+.order-now-btn:hover {
+  background-color: var(--primary);
+  color: #fff;
+  border: #fff 1px solid;
+}
+
+/* BANNER */
+header {
+  color: #fff;
+  width: 100%;
+  height: 100dvh;
+  position: relative;
+  top: -4em;
+  left: 0;
+}
+
+.video-banner-overlay {
+  position: absolute;
+  top: 0;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100dvh;
+}
+
+.video-banner video {
+  height: 100dvh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.title {
+  position: absolute;
+  top: 45%;
+  left: 10%;
+  z-index: 1;
+  width: 70%;
+}
+.title h1 {
+  margin: 0 0 0.2em 0;
+}
+.title p {
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: 200;
+}
+.title span {
+  font-weight: 700;
+  color: var(--primary);
+}
+
+/* INTRO SECTION */
+#intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+}
+
+.intro-img {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 30px;
+}
+.intro-img img {
+  width: 100%;
+  object-fit: cover;
+  height: 25rem;
+  border-radius: 30px;
+}
+.intro-img img:hover {
+  transform: scale(1.5);
+  transition: ease-out 0.3s;
+}
+
+.intro-desc {
+  width: 80%;
+}
+
+/* CATEGORY SECTION */
+#category {
+  background: #f5f5dc;
+  max-width: unset;
+}
+#category h2 {
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.category-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3em;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.category-item {
+  display: flex;
+  flex-direction: column;
+}
+.category-item h3 {
+  margin-bottom: unset;
+}
+.category-item img {
+  width: 100%;
+  height: 20em;
+  object-fit: cover;
+}
+.category-item a {
+  color: #fff;
+  font-size: 1.4rem;
+  text-decoration: none;
+  padding: 1em 0.5em;
+  border-radius: 0.5em;
+  background-color: var(--primary);
+  text-align: center;
+}
+.category-item a:hover {
+  background-color: var(--secondary);
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--secondary);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 3em 1em;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about-main {
+  color: #fff;
+}
+.about-main.logo {
+  color: var(--tertiary);
+}
+
+.social {
+  display: flex;
+  gap: 1em;
+}
+
+.container a {
+  color: #fff;
+  text-decoration: none;
+}
+.container a:hover {
+  color: var(--primary);
+}
+.container h4 {
+  font-size: 1.3em;
+  color: #fff;
+  margin: 0 0 0.5rem 0;
+}
+.container ul {
+  margin: 0;
+  padding: 0;
+}
+.container li {
+  list-style: none;
+  padding: 0.5em 0;
+}
+
+.popular-category {
+  padding-top: 0;
+}
+.popular-category p {
+  font-size: 2em;
+  margin-bottom: 2em;
+}
+.popular-category .parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 3em;
+  grid-row-gap: 3em;
+}
+.popular-category .parent .card {
+  border-radius: 2em;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--tertiary);
+}
+.popular-category .parent .meat {
+  grid-area: 1/1/2/2;
+  background-color: #8f3e2e;
+  position: relative;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.popular-category .parent .meat img {
+  width: 20em;
+  position: absolute;
+  top: -25%;
+}
+.popular-category .parent .meat h2 {
+  font-size: 2.5em;
+  margin: 0;
+  position: relative;
+  bottom: -32%;
+}
+.popular-category .parent .meat:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: "";
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  /* W3C */
+  transition-duration: 0.3s;
+  transition-property: transform opacity;
+}
+.popular-category .parent .meat:hover {
+  transform: translateY(-5px);
+  /* move the element up by 5px */
+}
+.popular-category .parent .meat:hover:before {
+  opacity: 1;
+  transform: translateY(5px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+.popular-category .parent .ice-cream {
+  grid-area: 1/2/3/3;
+  background-color: #7AAEF9;
+}
+.popular-category .parent .ice-cream:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: "";
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  /* W3C */
+  transition-duration: 0.3s;
+  transition-property: transform opacity;
+}
+.popular-category .parent .ice-cream:hover {
+  transform: translateY(-5px);
+  /* move the element up by 5px */
+}
+.popular-category .parent .ice-cream:hover:before {
+  opacity: 1;
+  transform: translateY(5px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+.popular-category .parent .ice-cream img {
+  width: 18em em;
+  position: absolute;
+  top: -10%;
+  left: 0;
+}
+.popular-category .parent .ice-cream .product-name {
+  position: absolute;
+  right: 10%;
+  bottom: 5%;
+}
+.popular-category .parent .ice-cream .product-name h2 {
+  font-size: 4em;
+}
+.popular-category .parent .ice-cream .product-name h3 {
+  font-size: 2em;
+  margin: 0;
+}
+.popular-category .parent .vegetables {
+  grid-area: 2/1/3/2;
+  background-color: #275924;
+}
+.popular-category .parent .vegetables:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: "";
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  /* W3C */
+  transition-duration: 0.3s;
+  transition-property: transform opacity;
+}
+.popular-category .parent .vegetables:hover {
+  transform: translateY(-5px);
+  /* move the element up by 5px */
+}
+.popular-category .parent .vegetables:hover:before {
+  opacity: 1;
+  transform: translateY(5px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+.popular-category .parent .vegetables img {
+  width: 10em;
+  position: relative;
+  top: -14%;
+}
+.popular-category .parent .vegetables h2 {
+  position: relative;
+  bottom: 10%;
+}
+.popular-category .parent .burger {
+  grid-area: 1/3/2/4;
+  background-color: #D08715;
+}
+.popular-category .parent .burger:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: "";
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  /* W3C */
+  transition-duration: 0.3s;
+  transition-property: transform opacity;
+}
+.popular-category .parent .burger:hover {
+  transform: translateY(-5px);
+  /* move the element up by 5px */
+}
+.popular-category .parent .burger:hover:before {
+  opacity: 1;
+  transform: translateY(5px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+.popular-category .parent .burger img {
+  width: 20em;
+  position: absolute;
+  top: -20%;
+}
+.popular-category .parent .burger h2 {
+  font-size: 2.5em;
+  margin: 0;
+  position: relative;
+  bottom: -32%;
+}
+.popular-category .parent .pizza {
+  grid-area: 2/3/3/4;
+  background-color: #FF7F84;
+}
+.popular-category .parent .pizza:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: "";
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  /* W3C */
+  transition-duration: 0.3s;
+  transition-property: transform opacity;
+}
+.popular-category .parent .pizza:hover {
+  transform: translateY(-5px);
+  /* move the element up by 5px */
+}
+.popular-category .parent .pizza:hover:before {
+  opacity: 1;
+  transform: translateY(5px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+.popular-category .parent .pizza img {
+  width: 14em;
+  position: relative;
+  top: -14%;
+}
+.popular-category .parent .pizza h2 {
+  position: relative;
+  bottom: 10%;
+}
+
+:root {
+  --primary: #00804a;
+  --secondary: #004225;
+  --tertiary: #f5f5dc;
+  --btn: #001e1f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+section {
+  padding: 3em 1em;
+  max-width: 1200px;
+  margin: auto;
+}

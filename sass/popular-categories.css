@@ -1,0 +1,228 @@
+.popular-category {
+  padding-top: 0;
+}
+.popular-category p {
+  font-size: 2em;
+  margin-bottom: 2em;
+}
+.popular-category .parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 3em;
+  grid-row-gap: 3em;
+}
+.popular-category .parent .card {
+  border-radius: 2em;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--tertiary);
+}
+.popular-category .parent .meat {
+  grid-area: 1/1/2/2;
+  background-color: #8f3e2e;
+  position: relative;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.popular-category .parent .meat img {
+  width: 20em;
+  position: absolute;
+  top: -25%;
+}
+.popular-category .parent .meat h2 {
+  font-size: 2.5em;
+  margin: 0;
+  position: relative;
+  bottom: -32%;
+}
+.popular-category .parent .meat:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: "";
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  /* W3C */
+  transition-duration: 0.3s;
+  transition-property: transform opacity;
+}
+.popular-category .parent .meat:hover {
+  transform: translateY(-5px);
+  /* move the element up by 5px */
+}
+.popular-category .parent .meat:hover:before {
+  opacity: 1;
+  transform: translateY(5px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+.popular-category .parent .ice-cream {
+  grid-area: 1/2/3/3;
+  background-color: #7AAEF9;
+}
+.popular-category .parent .ice-cream:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: "";
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  /* W3C */
+  transition-duration: 0.3s;
+  transition-property: transform opacity;
+}
+.popular-category .parent .ice-cream:hover {
+  transform: translateY(-5px);
+  /* move the element up by 5px */
+}
+.popular-category .parent .ice-cream:hover:before {
+  opacity: 1;
+  transform: translateY(5px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+.popular-category .parent .ice-cream img {
+  width: 18em em;
+  position: absolute;
+  top: -10%;
+  left: 0;
+}
+.popular-category .parent .ice-cream .product-name {
+  position: absolute;
+  right: 10%;
+  bottom: 5%;
+}
+.popular-category .parent .ice-cream .product-name h2 {
+  font-size: 4em;
+}
+.popular-category .parent .ice-cream .product-name h3 {
+  font-size: 2em;
+  margin: 0;
+}
+.popular-category .parent .vegetables {
+  grid-area: 2/1/3/2;
+  background-color: #275924;
+}
+.popular-category .parent .vegetables:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: "";
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  /* W3C */
+  transition-duration: 0.3s;
+  transition-property: transform opacity;
+}
+.popular-category .parent .vegetables:hover {
+  transform: translateY(-5px);
+  /* move the element up by 5px */
+}
+.popular-category .parent .vegetables:hover:before {
+  opacity: 1;
+  transform: translateY(5px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+.popular-category .parent .vegetables img {
+  width: 10em;
+  position: relative;
+  top: -14%;
+}
+.popular-category .parent .vegetables h2 {
+  position: relative;
+  bottom: 10%;
+}
+.popular-category .parent .burger {
+  grid-area: 1/3/2/4;
+  background-color: #D08715;
+}
+.popular-category .parent .burger:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: "";
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  /* W3C */
+  transition-duration: 0.3s;
+  transition-property: transform opacity;
+}
+.popular-category .parent .burger:hover {
+  transform: translateY(-5px);
+  /* move the element up by 5px */
+}
+.popular-category .parent .burger:hover:before {
+  opacity: 1;
+  transform: translateY(5px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+.popular-category .parent .burger img {
+  width: 20em;
+  position: absolute;
+  top: -20%;
+}
+.popular-category .parent .burger h2 {
+  font-size: 2.5em;
+  margin: 0;
+  position: relative;
+  bottom: -32%;
+}
+.popular-category .parent .pizza {
+  grid-area: 2/3/3/4;
+  background-color: #FF7F84;
+}
+.popular-category .parent .pizza:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: "";
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  /* W3C */
+  transition-duration: 0.3s;
+  transition-property: transform opacity;
+}
+.popular-category .parent .pizza:hover {
+  transform: translateY(-5px);
+  /* move the element up by 5px */
+}
+.popular-category .parent .pizza:hover:before {
+  opacity: 1;
+  transform: translateY(5px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+.popular-category .parent .pizza img {
+  width: 14em;
+  position: relative;
+  top: -14%;
+}
+.popular-category .parent .pizza h2 {
+  position: relative;
+  bottom: 10%;
+}
