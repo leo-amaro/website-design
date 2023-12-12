@@ -91,6 +91,11 @@ $shadowColour: rgba(0, 0, 0, .6);
                     transform: translateY(5px);
                     /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
                 }
+
+                img {
+                    transform: translateY(-10px);
+                    transition: all ease-in-out .3s
+                }
             }
         }
 
@@ -177,6 +182,11 @@ $shadowColour: rgba(0, 0, 0, .6);
                     transform: translateY(5px);
                     /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
                 }
+
+                img {
+                    transform: translateY(-10px);
+                    transition: all ease-in-out .3s
+                }
             }
 
             img {
@@ -219,6 +229,11 @@ $shadowColour: rgba(0, 0, 0, .6);
                     opacity: 1;
                     transform: translateY(5px);
                     /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+                }
+
+                img {
+                    transform: translateY(-10px);
+                    transition: all ease-in-out .3s
                 }
             }
 
@@ -264,6 +279,11 @@ $shadowColour: rgba(0, 0, 0, .6);
                     opacity: 1;
                     transform: translateY(5px);
                     /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+                }
+
+                img {
+                    transform: translateY(-10px);
+                    transition: all ease-in-out .3s
                 }
             }
 

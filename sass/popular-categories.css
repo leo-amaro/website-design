@@ -67,6 +67,10 @@
   transform: translateY(5px);
   /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
 }
+.popular-category .parent .meat:hover img {
+  transform: translateY(-10px);
+  transition: all ease-in-out 0.3s;
+}
 .popular-category .parent .ice-cream {
   grid-area: 1/2/3/3;
   background-color: #7AAEF9;
@@ -141,6 +145,10 @@
   transform: translateY(5px);
   /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
 }
+.popular-category .parent .vegetables:hover img {
+  transform: translateY(-10px);
+  transition: all ease-in-out 0.3s;
+}
 .popular-category .parent .vegetables img {
   width: 10em;
   position: relative;
@@ -177,6 +185,10 @@
   opacity: 1;
   transform: translateY(5px);
   /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+.popular-category .parent .burger:hover img {
+  transform: translateY(-10px);
+  transition: all ease-in-out 0.3s;
 }
 .popular-category .parent .burger img {
   width: 20em;
@@ -216,6 +228,10 @@
   opacity: 1;
   transform: translateY(5px);
   /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+.popular-category .parent .pizza:hover img {
+  transform: translateY(-10px);
+  transition: all ease-in-out 0.3s;
 }
 .popular-category .parent .pizza img {
   width: 14em;
