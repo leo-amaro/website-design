@@ -5,23 +5,37 @@
   align-items: center;
   gap: 3em;
 }
-
-.intro-img {
+#intro .intro-img {
   width: 100%;
   overflow: hidden;
   border-radius: 30px;
 }
-.intro-img img {
+#intro .intro-img img {
   width: 100%;
   object-fit: cover;
   height: 25rem;
   border-radius: 30px;
 }
-.intro-img img:hover {
-  transform: scale(1.5);
+#intro .intro-img img:hover {
+  transform: scale(1.2);
   transition: ease-out 0.3s;
 }
-
-.intro-desc {
-  width: 80%;
+#intro .intro-desc {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+}
+#intro .intro-desc a {
+  background: var(--secondary);
+  color: var(--tertiary);
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-radius: 8px;
+  width: fit-content;
+}
+#intro .intro-desc a:hover {
+  background-color: var(--primary);
+  color: #fff;
 }

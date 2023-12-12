@@ -1,31 +1,49 @@
 /* INTRO SECTION */
 
 #intro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3em;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+
+
   .intro-img {
     width: 100%;
     overflow: hidden;
     border-radius: 30px;
-  
+
     img {
       width: 100%;
       object-fit: cover;
       height: 25rem;
       border-radius: 30px;
-  
+
       &:hover {
-        transform: scale(1.5);
+        transform: scale(1.2);
         transition: ease-out 0.3s;
       }
     }
   }
-  
+
   .intro-desc {
-    width: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+
+    a {
+      background: var(--secondary);
+      color: var(--tertiary);
+      padding: 0.5em 1em;
+      text-decoration: none;
+      border-radius: 8px;
+      width: fit-content;
+
+      &:hover {
+        background-color: var(--primary);
+        color: #fff;
+      }
+    }
   }
-  
+}
